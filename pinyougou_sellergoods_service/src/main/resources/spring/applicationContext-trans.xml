@@ -10,6 +10,7 @@
     <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
+
     <!-- 通知 -->
     <tx:advice transaction-manager="transactionManager" id="txAdvice">
         <tx:attributes>
